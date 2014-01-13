@@ -21,6 +21,9 @@
 		40A908131883C7640042CE9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A907F51883C7640042CE9A /* UIKit.framework */; };
 		40A9081B1883C7640042CE9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A908191883C7640042CE9A /* InfoPlist.strings */; };
 		40A9081D1883C7640042CE9A /* GeurunnalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9081C1883C7640042CE9A /* GeurunnalTests.m */; };
+		40A908281883C7780042CE9A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A908271883C7780042CE9A /* Message.m */; };
+		40A9082A1883C8AF0042CE9A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A908291883C8AF0042CE9A /* libsqlite3.dylib */; };
+		40A9082C1883CBEC0042CE9A /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 40A9082B1883CBEC0042CE9A /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		40A908181883C7640042CE9A /* GeurunnalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeurunnalTests-Info.plist"; sourceTree = "<group>"; };
 		40A9081A1883C7640042CE9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40A9081C1883C7640042CE9A /* GeurunnalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeurunnalTests.m; sourceTree = "<group>"; };
+		40A908261883C7780042CE9A /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		40A908271883C7780042CE9A /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		40A908291883C8AF0042CE9A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		40A9082B1883CBEC0042CE9A /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A9082A1883C8AF0042CE9A /* libsqlite3.dylib in Frameworks */,
 				40A907F41883C7640042CE9A /* CoreGraphics.framework in Frameworks */,
 				40A907F61883C7640042CE9A /* UIKit.framework in Frameworks */,
 				40A907F21883C7640042CE9A /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		40A907F01883C7640042CE9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40A908291883C8AF0042CE9A /* libsqlite3.dylib */,
 				40A907F11883C7640042CE9A /* Foundation.framework */,
 				40A907F31883C7640042CE9A /* CoreGraphics.framework */,
 				40A907F51883C7640042CE9A /* UIKit.framework */,
@@ -112,6 +121,7 @@
 		40A907F71883C7640042CE9A /* Geurunnal */ = {
 			isa = PBXGroup;
 			children = (
+				40A9082B1883CBEC0042CE9A /* db.sqlite */,
 				40A908001883C7640042CE9A /* AppDelegate.h */,
 				40A908011883C7640042CE9A /* AppDelegate.m */,
 				40A908031883C7640042CE9A /* Main.storyboard */,
@@ -119,6 +129,8 @@
 				40A908071883C7640042CE9A /* ViewController.m */,
 				40A908091883C7640042CE9A /* Images.xcassets */,
 				40A907F81883C7640042CE9A /* Supporting Files */,
+				40A908261883C7780042CE9A /* Message.h */,
+				40A908271883C7780042CE9A /* Message.m */,
 			);
 			path = Geurunnal;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 				40A9080A1883C7640042CE9A /* Images.xcassets in Resources */,
 				40A907FC1883C7640042CE9A /* InfoPlist.strings in Resources */,
 				40A908051883C7640042CE9A /* Main.storyboard in Resources */,
+				40A9082C1883CBEC0042CE9A /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A908081883C7640042CE9A /* ViewController.m in Sources */,
+				40A908281883C7780042CE9A /* Message.m in Sources */,
 				40A908021883C7640042CE9A /* AppDelegate.m in Sources */,
 				40A907FE1883C7640042CE9A /* main.m in Sources */,
 			);
